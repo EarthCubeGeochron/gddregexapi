@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 GeoDeepDive Regular Expressions
+  div(style='float:left', class='content')
+    each val in regex
+      div(class="selection", tabindex="-1", width='10px')
+        p= val
+  div(style='float:right', class='content')
+    each sent in sentences
+      div(class="selection", tabindex="-1", width='10px')
+        p= sent

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='/regexpost',method='post')
+    div.form-group
+      label(for:'firstname') First name:
+      input#firstname.form-control(type='text', placeholder='First (preferred) name' name='firstname')
+    div.form-group
+      label(for:'familyname') Last name:
+      input#familyname.form-control(type='text', placeholder='Last (family) name' name='familyname')

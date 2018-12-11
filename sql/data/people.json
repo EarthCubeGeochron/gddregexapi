@@ -1,0 +1,9 @@
+[{"firstName": "Simon",
+  "familyName": "Goring",
+  "identifier": {"type":"ordid", "id":"0000-0002-2700-4605"}},
+  {"firstName": "Eric",
+  "familyName": "Grimm",
+  "identifier": {"type":"ordid", "id":"0000-0002-6977-3859"}},
+  {"firstName": "John",
+  "familyName": "Williams",
+  "identifier": {"type":"ordid", "id":"0000-0001-6046-9634"}}]

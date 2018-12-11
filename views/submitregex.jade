@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  h1= title
+  p Submit your regex here.
+
+  form(action='/regexpost',method='post')
+    table
+      tr
+        td
+          label(for:'firstname') First name:
+        td
+          input#firstname.form-control(type='text', placeholder='First (preferred) name' name='firstname')
+      tr
+        td
+          label(for:'familyname') Last name:
+        td
+          input#familyname.form-control(type='text', placeholder='Last (family) name' name='familyname')
+      tr
+        td
+          label(for:'orcid') ORCiD:
+        td
+          input#orcid.form-control(type='text', placeholder='0000-0000-0000-0000' name='orcid')
+      tr
+        td
+          label(for:'regexflavor') Regex Language:
+        td
+          select(id='regexoptions')
+            each val in flavors
+              option(value=val) #{val}
+      tr
+        td
+          label(for:'regex') Regex Statement:
+        td
+          input#regex.form-control(name='regex',placeholder='.*DeepDive.*')
+      tr
+        td
+          label(for:'description') Regex Description:
+        td
+          input#description.form-control(name='description',placeholder='What this regex does')
+
+    input(type='submit', value='submit')

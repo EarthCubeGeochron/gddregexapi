@@ -1,0 +1,41 @@
+[{
+    "title": "Ages in BP",
+    "regex": "(\d+(?:[.]\d+)*),((?:-{1,2})|(?:to)),(\d+(?:[.]\d+)*),([a-zA-Z]+,BP),",
+    "description": "Regular expression for dates and date ranges using a (before present) timescale.",
+    "id":"0000-0001-6046-9634"
+  },
+  {
+    "title": "Decimal Degrees",
+    "regex": "[\{,][-]?[1]?[0-9]{1,2}\.[0-9]{1,}[,]?[NESWnesw],",
+    "description": "Regular expression for decimal degrees reported in articles.",
+    "id":"0000-0001-6046-9634"
+  },
+  {
+    "Ages in years"
+    "regex": ",(\d+(?:[\.\s]\d+){0,1}),.*?,yr,",
+    "description": "Age ranges with ages measured in years.",
+    "id":"0000-0001-6046-9634"
+  },
+  {
+    "title": "Supplemental material",
+    "regex": "(S|s)upplement,\d{1,2}",
+    "description": "Very general search for a reference to supplemental material.",
+    "id":"0000-0001-6046-9634"
+  }, {
+    "title": "Supplemental material",
+    "regex": "supplement",
+    "description": "Look for a reference to supplementary material in a document.",
+    "id":"0000-0001-6046-9634"
+  }, {
+    "title": "Find DOIs in text",
+    "regex": "10.\d{4,9}/[-._;()/:A-Z0-9]",
+    "description": "Matches DOIs in papers, described in https://www.crossref.org/blog/dois-and-matching-regular-expressions/",
+    "id":"0000-0001-6046-9634"
+  },
+  {
+    "title": "Match ORCIDs in text.",
+    "regex": "(\d{4})-(\d{4})-(\d{4})-(\d{3}[0-9X])",
+    "description": "Match orcid identifiers in text.",
+    "id":"0000-0001-6046-9634"
+  }
+]
